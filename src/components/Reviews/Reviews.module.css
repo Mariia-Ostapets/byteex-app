@@ -1,0 +1,39 @@
+.reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 24px 40px;
+  background: #fff;
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  max-width: 338px;
+  height: 194px;
+  text-align: center;
+}
+
+.img {
+  border-radius: 50%;
+  width: 39px;
+  height: 39px;
+  object-fit: cover;
+}
+
+.reviewContent {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+}
