@@ -28,7 +28,7 @@ body {
   line-height: 1.53;
   letter-spacing: 0.03em;
   background-color: var(--primary-color-white);
-  color: var(--primary-color-black);
+  color: var(--primary-color-gray);
   margin: 0;
 }
 
@@ -58,7 +58,7 @@ ul {
   padding: 0;
 }
 
-.btn {
+button {
   cursor: pointer;
   background-color: var(--primary-color-blue);
   border-radius: 5px;
@@ -71,6 +71,16 @@ ul {
   font-size: 18px;
   text-align: center;
   color: var(--primary-color-white);
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--primary-transition);
+}
+
+button:hover,
+button:focus {
+  background-color: var(--secondary-color-blue);
 }
 
 .section-paddings {

@@ -1,11 +1,12 @@
-import Banner from "../Banner/Banner";
 import Logo from "../Logo/Logo";
+import Layout from "../Layout/Layout";
 
 export default function Header() {
   return (
-    <header>
-      <Banner />
-      <Logo />
-    </header>
+    <Layout>
+      <header>
+        <Logo />
+      </header>
+    </Layout>
   );
 }

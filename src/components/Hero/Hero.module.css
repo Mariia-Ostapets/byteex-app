@@ -1,0 +1,129 @@
+.heroSection {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 52px;
+  background-image: url("../../../public/images/hero-mob.png");
+  background-position: 0px 100px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1464px) {
+  .heroSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("../../../public/images/hero-desc.png");
+    background-position: right;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .heroSection {
+    background-image: url("../../../public/images/hero-desc@2x.png");
+  }
+}
+
+.heroTitle {
+  margin-bottom: 263px;
+  font-size: 26px;
+  line-height: 1.31;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--primary-color-blue);
+}
+
+@media screen and (min-width: 1464px) {
+  .heroTitle {
+    margin-bottom: 32px;
+    font-size: 38px;
+    line-height: 1.18;
+    font-weight: 400;
+    width: 592px;
+    text-align: left;
+  }
+}
+
+.heroList {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-bottom: 29px;
+}
+
+@media screen and (min-width: 1464px) {
+  .heroList {
+    gap: 18px;
+    margin-bottom: 39px;
+  }
+}
+
+.heroItem {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.heroDescription {
+  font-size: 13px;
+  line-height: 1.38;
+}
+
+@media screen and (min-width: 1464px) {
+  .heroDescription {
+    width: 425px;
+  }
+}
+
+.heroClientWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  width: 388px;
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.08);
+  padding: 13px;
+  position: absolute;
+  bottom: -120px;
+  left: -10px;
+}
+
+@media screen and (min-width: 1464px) {
+  .heroClientWrapper {
+    left: 0px;
+  }
+}
+
+.heroAvatarTitleWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.heroClientTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heroStarsWrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.heroClientText {
+  font-size: 11px;
+  line-height: 1.82;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-gray1);
+}
+
+.heroClientDescription {
+  font-size: 12px;
+  line-height: 1.92;
+  letter-spacing: 0.04em;
+}

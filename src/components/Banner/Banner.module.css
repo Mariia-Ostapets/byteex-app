@@ -1,15 +1,39 @@
-.banner {
+.bannerContainer {
   position: fixed;
+  top: 0;
   left: 50%;
+  z-index: 999999;
   transform: translateX(-50%);
-  /* padding-top: 15px;
-  padding-bottom: 15px; */
-  text-align: center;
+  width: 100%;
+  max-width: 1464px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--primary-color-beige);
+}
+
+.banner {
+  display: flex;
   min-width: 428px;
   font-size: 11px;
   line-height: 3.18;
   letter-spacing: 0.08em;
-  text-align: center;
+  width: max-content;
   color: var(--secondary-color-gray4);
-  background-color: var(--primary-color-beige);
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 30s linear infinite;
+}
+
+/* .banner span {
+  display: inline-block;
+  padding-left: 200px;
+} */
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
