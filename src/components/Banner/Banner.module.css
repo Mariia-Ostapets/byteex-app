@@ -1,0 +1,15 @@
+.banner {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+  text-align: center;
+  min-width: 428px;
+  font-size: 11px;
+  line-height: 3.18;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: var(--secondary-color-gray4);
+  background-color: var(--primary-color-beige);
+}
