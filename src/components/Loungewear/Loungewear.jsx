@@ -47,6 +47,7 @@ export default function Loungewear() {
     <div className={css.loungewearContainer}>
       <Swiper
         modules={[Navigation, Thumbs]}
+        loop={true}
         spaceBetween={10}
         slidesPerView={1}
         navigation={{
