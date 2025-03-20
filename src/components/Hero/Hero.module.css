@@ -16,13 +16,13 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
+/* @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .heroSection {
     background-image: url("../../../public/images/hero-desc@2x.png");
   }
-}
+} */
 
 .heroTitle {
   margin-bottom: 263px;

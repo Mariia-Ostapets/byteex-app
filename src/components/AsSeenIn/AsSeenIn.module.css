@@ -1,0 +1,26 @@
+.asSeenInContainer {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.asSeenInTitle {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--secondary-color-gray2);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1464px) {
+  .asSeenInTitle {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

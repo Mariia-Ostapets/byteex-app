@@ -43,7 +43,7 @@ export default function Hero() {
           <div className={css.heroAvatarTitleWrapper}>
             <picture>
               <source
-                srcset="
+                srcSet="
                       ../images/hero-review.png    1x,
                       ../images/hero-review@2x.png 2x
                     "
@@ -51,7 +51,7 @@ export default function Hero() {
                 height="39"
               />
               <img
-                src="/images/hero-review.png"
+                src="../images/hero-review.png"
                 alt="Client's avatar"
                 width="39"
                 height="39"
