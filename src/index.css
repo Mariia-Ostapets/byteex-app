@@ -10,6 +10,7 @@
   --secondary-color-gray2: #868787;
   --secondary-color-gray3: #6c6c6c;
   --secondary-color-gray4: #565656;
+  --secondary-color-gray5: #f0eeef;
 
   /* Transition */
   --primary-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

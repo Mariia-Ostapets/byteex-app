@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Container from "../Container/Container";
 import Banner from "../Banner/Banner";
 import Benefits from "../Benefits/Benefits";
+import About from "../About/About";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <main>
         <Hero />
         <Benefits />
+        <About />
       </main>
     </Container>
   );

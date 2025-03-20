@@ -16,13 +16,23 @@
   display: flex;
   gap: 40px;
   justify-content: center;
+  position: relative;
 }
 
-@media screen and (max-width: 1464px) {
+@media screen and (max-width: 1463px) {
   .benefitsItems {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+
+  .benefitsItems:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 334px;
+    height: 1px;
+    background-color: rgba(196, 196, 196, 0.5);
   }
 }
 
