@@ -33,7 +33,7 @@ export default function Hero() {
             </p>
           </li>
         </ul>
-        <button>
+        <button className={css.heroBtn}>
           <span>Customize Your Outfit</span>
           <svg width={23} height={10}>
             <use href="/sprite.svg#icon-btn-arrow" />

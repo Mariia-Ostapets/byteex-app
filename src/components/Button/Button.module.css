@@ -1,0 +1,45 @@
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--primary-color-blue);
+  border-radius: 5px;
+  width: 369px;
+  min-height: 56px;
+  border: none;
+  outline: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--primary-color-white);
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--primary-transition);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--secondary-color-blue);
+}
+
+.starsWrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.starsText {
+  font-size: 11px;
+  line-height: 1.82;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-gray1);
+}

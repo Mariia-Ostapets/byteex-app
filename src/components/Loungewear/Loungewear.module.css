@@ -1,0 +1,63 @@
+.loungewearContainer {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperBtnPrev,
+.swiperBtnNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: none;
+  border: none;
+}
+
+.swiperBtnPrev {
+  left: 0px;
+}
+
+.swiperBtnNext {
+  right: 0px;
+}
+
+.swiperBtnIcon {
+  width: 10px;
+  height: 19px;
+}
+
+@media screen and (min-width: 1464px) {
+  .swiperBtnIcon {
+    width: 14px;
+    height: 25px;
+  }
+}
+
+.loungewearDescr {
+  margin-top: 7px;
+  font-size: 13px;
+  line-height: 1.69;
+  text-align: center;
+}
+
+@media screen and (max-width: 1463px) {
+  .loungewearDescr {
+    margin-bottom: 61px;
+  }
+}
+
+@media screen and (min-width: 1464px) {
+  .loungewearDescr {
+    margin-top: 13px;
+  }
+}

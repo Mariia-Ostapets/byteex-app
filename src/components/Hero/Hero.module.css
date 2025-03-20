@@ -13,6 +13,7 @@
     padding-bottom: 60px;
     background-image: url("../../../public/images/hero-desc.png");
     background-position: right;
+    /* background-size: cover; */
   }
 }
 
@@ -75,6 +76,31 @@
   }
 }
 
+.heroBtn {
+  cursor: pointer;
+  background-color: var(--primary-color-blue);
+  border-radius: 5px;
+  width: 369px;
+  min-height: 56px;
+  border: none;
+  outline: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--primary-color-white);
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--primary-transition);
+}
+
+.heroBtn:hover,
+.heroBtn:focus {
+  background-color: var(--secondary-color-blue);
+}
+
 .heroClientWrapper {
   display: flex;
   flex-direction: column;
@@ -88,6 +114,7 @@
   position: absolute;
   bottom: -120px;
   left: -10px;
+  z-index: -10;
 }
 
 @media screen and (min-width: 1464px) {

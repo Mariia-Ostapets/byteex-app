@@ -1,3 +1,57 @@
 .sectionBenefits {
   padding-top: 150px;
+  padding-bottom: 43px;
+  background-image: url("../../../public/images/benefits-bg-top-mob.png"),
+    url("../../../public/images/benefits-bg-bottom-mob.png");
+  background-position: top 120px left, bottom -50px left;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1464px) {
+  .sectionBenefits {
+    background-image: url("../../../public/images/benefits-bg-top-desc.png"),
+      url("../../../public/images/benefits-bg-bottom-desc.png");
+    background-position: top 130px left, top 120px left;
+  }
+}
+
+.loungewearTitle {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.31;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--primary-color-blue);
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1463px) {
+  .loungewearTitle {
+    max-width: 330px;
+  }
+}
+
+@media screen and (min-width: 1464px) {
+  .loungewearTitle {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 74px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1464px) {
+  .sectionBenefits {
+    padding-bottom: 90px;
+  }
+
+  .benefitsContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
 }
