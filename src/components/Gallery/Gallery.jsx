@@ -1,6 +1,7 @@
 import css from "./Gallery.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Loader } from "../Loader/Loader";
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
@@ -36,11 +37,6 @@ export default function Gallery() {
         setImages(response.data.hits);
       } catch (error) {
         console.error("Error fetching images:", error);
-        // iziToast.error({
-        //   title: "Error",
-        //   message: "Failed to fetch images",
-        //   position: "center",
-        // });
       } finally {
         setLoading(false);
       }
@@ -51,7 +47,7 @@ export default function Gallery() {
 
   return (
     <>
-      {loading && <p>Loading...</p>}
+      {loading && <Loader />}
       <ul className={css.gallery}>
         {images.map((img) => (
           <li key={img.id} className={css.galleryItem}>
