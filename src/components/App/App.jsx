@@ -5,6 +5,7 @@ import Banner from "../Banner/Banner";
 import Benefits from "../Benefits/Benefits";
 import About from "../About/About";
 import HowOrder from "../HowOrder/HowOrder";
+import UserContent from "../UserContent/UserContent";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Benefits />
         <About />
         <HowOrder />
+        <UserContent />
       </main>
     </Container>
   );

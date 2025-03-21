@@ -13,7 +13,9 @@
 .howOrderContainer {
   position: relative;
   max-width: 100%;
-  margin: auto;
+  margin-bottom: 41px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +24,7 @@
 @media screen and (max-width: 1463px) {
   .howOrderContainer {
     max-width: 288px;
+    margin-bottom: 56px;
   }
 }
 
@@ -54,11 +57,11 @@
 }
 
 .swiperBtnPrev {
-  left: 0px;
+  left: -35px;
 }
 
 .swiperBtnNext {
-  right: 0px;
+  right: -35px;
 }
 
 .swiperBtnIcon {
@@ -79,16 +82,27 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 70px 32px;
+  padding: 50px 22px;
   border-radius: 8px;
   border: 1px solid #ededed;
-  /* background-color: #f9f0e6; */
+  height: 288px;
 }
 
-.stepItem:nth-child(odd) {
-  background-color: var(--secondary-color-gray5);
+@media screen and (min-width: 1464px) {
+  .stepItem {
+    height: 321px;
+  }
 }
 
-.stepItem:nth-child(even) {
-  background-color: #f9f0e6;
+.stepTitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.82;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--primary-color-blue);
+}
+
+.stepText {
+  text-align: center;
 }

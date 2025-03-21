@@ -1,0 +1,40 @@
+.sectionUserContent {
+  padding-bottom: 68px;
+}
+
+@media screen and (min-width: 1464px) {
+  .sectionUserContent {
+    padding-bottom: 109px;
+  }
+}
+
+.userContentTitle {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.54;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--primary-color-blue);
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 1464px) {
+  .userContentTitle {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+
+.userContentText {
+  text-align: center;
+  margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1464px) {
+  .userContentText {
+    width: 613px;
+  }
+}

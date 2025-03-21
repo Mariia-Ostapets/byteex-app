@@ -1,0 +1,25 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  margin-bottom: 37px;
+}
+
+.galleryImg {
+  width: 101px;
+  height: 102px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1464px) {
+  .gallery {
+    margin-bottom: 56px;
+  }
+
+  .galleryImg {
+    width: 129px;
+    height: 128px;
+  }
+}

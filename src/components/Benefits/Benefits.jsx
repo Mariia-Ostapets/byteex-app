@@ -22,7 +22,7 @@ export default function Benefits() {
     <section className={css.sectionBenefits}>
       <Layout>
         <AsSeenIn />
-        <h3 className={css.loungewearTitle}>Loungewear you can be proud of.</h3>
+        <h2 className={css.loungewearTitle}>Loungewear you can be proud of.</h2>
         <div className={css.benefitsContainer}>
           <Loungewear />
           <BenefitsItems />

@@ -1,4 +1,5 @@
 .sectionBenefits {
+  position: relative;
   padding-top: 150px;
   padding-bottom: 43px;
   background-image: url("../../../public/images/benefits-bg-top-mob.png"),

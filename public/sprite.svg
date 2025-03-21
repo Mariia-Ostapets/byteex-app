@@ -11,7 +11,7 @@
 <path d="M169.934 0h7.844v7.85h-7.844v-7.85z"></path>
 </symbol>
 <symbol id="icon-day-night" viewBox="0 0 32 32">
-<path fill="#f9f0e5" style="fill: var(--color1, #f9f0e5)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#f9f0e5" style="fill: var(--color3, #f9f0e5)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1355" d="M16 5.677v21.161"></path>
 <path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1355" d="M16 21.956c-3.15 0-5.697-2.547-5.697-5.697s2.547-5.697 5.697-5.697"></path>
 <path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1355" d="M8.52 8.779l1.725 1.725"></path>
@@ -90,6 +90,17 @@
 </symbol>
 <symbol id="icon-as-seen1" viewBox="0 0 259 32">
 <path d="M0 0h258.909v32h-258.909v-32z"></path>
+</symbol>
+<symbol id="icon-no-extras-how-order" viewBox="0 0 32 32">
+<path fill="#01005b" style="fill: var(--color1, #01005b)" d="M9.006 6.88c0-0.401 0.325-0.726 0.726-0.726h16.971c0.212 0 0.413 0.092 0.551 0.253s0.199 0.373 0.167 0.583l-0.725 4.755c-0.055 0.359-0.364 0.617-0.717 0.617-0.036 0-0.073-0.003-0.11-0.008-0.396-0.060-0.669-0.431-0.608-0.827l0.598-3.92h-16.126c-0.401 0-0.726-0.325-0.726-0.726zM14.517 19.256h-6.434l-2.682-15.657c-0.060-0.349-0.362-0.603-0.716-0.603h-3.96c-0.401 0-0.726 0.325-0.726 0.726s0.325 0.726 0.726 0.726h3.348l2.682 15.657c0.061 0.354 0.367 0.603 0.715 0.603 0.041-0 0.082-0.003 0.123-0.011 0.003-0.001 0.006-0.001 0.009-0.002 0.043 0.008 0.087 0.012 0.132 0.012h6.783c0.401 0 0.726-0.325 0.726-0.726s-0.325-0.726-0.726-0.726zM13.114 24.393v1.288c0 1.211-0.985 2.196-2.196 2.196s-2.196-0.985-2.196-2.196v-1.288c0-1.211 0.985-2.196 2.196-2.196s2.196 0.985 2.196 2.196zM11.662 24.393c0-0.41-0.334-0.744-0.744-0.744h-0c-0.41 0-0.744 0.334-0.744 0.744v1.288c0 0.41 0.334 0.744 0.744 0.744s0.744-0.334 0.744-0.744v-1.288zM31.9 17.622c-0.428 3.441-2.171 6.51-4.908 8.641-2.303 1.793-5.078 2.741-7.95 2.741-0.541 0-1.085-0.034-1.63-0.102-0.456-0.057-0.916-0.139-1.367-0.245-0.303-0.071-0.527-0.326-0.557-0.636-0.094-0.958-0.081-1.93 0.038-2.889 0.885-7.105 7.384-12.165 14.489-11.28 0.457 0.057 0.916 0.139 1.367 0.245 0.303 0.071 0.527 0.326 0.557 0.636 0.094 0.957 0.082 1.929-0.038 2.889zM30.532 15.403c-0.232-0.043-0.466-0.080-0.699-0.109-6.309-0.785-12.083 3.709-12.868 10.019-0.045 0.36-0.073 0.722-0.084 1.084l6.641-5.819c0.301-0.264 0.76-0.234 1.024 0.068s0.234 0.76-0.068 1.024l-6.643 5.819c2.972 0.307 5.897-0.531 8.262-2.373 2.43-1.892 3.979-4.618 4.359-7.675 0.085-0.677 0.109-1.361 0.074-2.040z"></path>
+</symbol>
+<symbol id="icon-day-night-how-order" viewBox="0 0 32 32">
+<path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.0667" d="M16 3v26"></path>
+<path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.0667" d="M16 23c-3.87 0-7-3.13-7-7s3.13-7 7-7"></path>
+<path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.0667" d="M6.81 6.81l2.12 2.12"></path>
+<path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.0667" d="M3 16h3"></path>
+<path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.0667" d="M6.81 25.19l2.12-2.12"></path>
+<path fill="none" stroke="#15005b" style="stroke: var(--color2, #15005b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.0667" d="M16 12.55c1.2-2.12 3.48-3.55 6.090-3.55 0.16 0 0.31 0.010 0.47 0.020-1.67 0.88-2.8 2.63-2.8 4.64 0 2.9 2.35 5.25 5.25 5.25 1.6 0 3.030-0.72 3.99-1.85-0.52 3.37-3.41 5.94-6.91 5.94-2.61 0-4.89-1.43-6.090-3.55"></path>
 </symbol>
 </defs>
 </svg>

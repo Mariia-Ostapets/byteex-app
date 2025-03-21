@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import Layout from "../Layout/Layout";
+import Button from "../Button/Button";
 
 export default function HowOrder() {
   const swiperRef = useRef(null);
@@ -16,18 +17,21 @@ export default function HowOrder() {
       title: "You save.",
       text: "Browse our comfort sets and save 15% when you bundle.",
       icon: "icon-no-extras",
+      backgroundColor: "#f9f0e6",
     },
     {
       id: useId(),
       title: "We ship.",
       text: "We ship your items within 1-2 days of receiving your order.",
       icon: "icon-ship",
+      backgroundColor: "#f0eeef",
     },
     {
       id: useId(),
       title: "You enjoy!",
       text: "Wear hernest around the house, out on the town, or in bed.",
       icon: "icon-day-night",
+      backgroundColor: "#f9f0e6",
     },
   ];
 
@@ -51,19 +55,20 @@ export default function HowOrder() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             className="main-swiper"
           >
-            <ul className={css.stepsList}>
-              {steps.map((step) => (
-                <li className={css.stepItem}>
-                  <SwiperSlide key={step.id}>
-                    <svg className={css.stepIcon} width={51} height={51}>
-                      <use href={`/sprite.svg#${step.icon}`}></use>
-                    </svg>
-                    <h3>{step.title}</h3>
-                    <p>{step.text}</p>
-                  </SwiperSlide>
-                </li>
-              ))}
-            </ul>
+            {steps.map((step) => (
+              <SwiperSlide key={step.id}>
+                <div
+                  className={css.stepItem}
+                  style={{ backgroundColor: step.backgroundColor }}
+                >
+                  <svg width={51} height={51}>
+                    <use href={`/sprite.svg#${step.icon}`}></use>
+                  </svg>
+                  <h3 className={css.stepTitle}>{step.title}</h3>
+                  <p className={css.stepText}>{step.text}</p>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
           <button
             className={css.swiperBtnPrev}
@@ -82,6 +87,7 @@ export default function HowOrder() {
             </svg>
           </button>
         </div>
+        <Button />
       </section>
     </Layout>
   );
