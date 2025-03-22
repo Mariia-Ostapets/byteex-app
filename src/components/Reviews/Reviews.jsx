@@ -1,70 +1,134 @@
-// import { useState, useEffect } from "react";
-// import axios from "axios";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import { Navigation } from "swiper/modules";
+import { useState, useEffect, useRef } from "react";
+import axios from "axios";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
 import css from "./Reviews.module.css";
+import { Loader } from "../Loader/Loader";
 
 export default function Reviews() {
-  // const [reviews, setReviews] = useState([]);
+  const [reviews, setReviews] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const swiperRef = useRef(null);
 
-  // const STRAPI_URL = "http://localhost:1337";
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      const screenWidth = window.innerWidth;
+      document.querySelectorAll(".swiper-slide").forEach((slide) => {
+        if (
+          screenWidth >= 1464 &&
+          slide.classList.contains("swiper-slide-active")
+        ) {
+          slide.style.transform = "scale(1.2)";
+          slide.style.transition = "transform 0.4s ease-in-out";
+        } else {
+          slide.style.transform = "scale(1.2)";
+        }
+      });
+    });
 
-  // const getReviews = async () => {
-  //   try {
-  //     const response = await axios.get(`${STRAPI_URL}/api/articles?populate=*`);
-  //     setReviews(response.data.data);
-  //     console.log(response.data.data);
-  //   } catch (error) {
-  //     console.error(error.message);
-  //   }
-  // };
+    const swiperContainer = swiperRef.current?.el;
+    if (swiperContainer) {
+      observer.observe(swiperContainer, { attributes: true, subtree: true });
+    }
 
-  // useEffect(() => {
-  //   getReviews();
-  // }, []);
+    return () => observer.disconnect();
+  }, []);
 
-  return;
-  //   <Swiper
-  //     modules={[Navigation]}
-  //     spaceBetween={20}
-  //     slidesPerView={1}
-  //     centeredSlides={true}
-  //     navigation={true}
-  //     pagination={{ clickable: true }}
-  //     loop={true}
-  //     breakpoints={{
-  //       428: { slidesPerView: 1 },
-  //       1464: { slidesPerView: 3 },
-  //     }}
-  //     style={{
-  //       "--swiper-navigation-size": "10px",
-  //       "--swiper-theme-color": "black",
-  //       "--swiper-navigation-sides-offset": "10px",
-  //     }}
-  //   >
-  //     {reviews.map((review) => {
-  //       return (
-  //         <SwiperSlide key={review.id}>
-  //           <div className={css.reviewsContainer}>
-  //             <div className={css.reviewContent}>
-  //               <img
-  //                 className={css.img}
-  //                 src={`${STRAPI_URL}${review.cover.url}`}
-  //                 alt={review.title}
-  //                 width={39}
-  //                 height={39}
-  //               />
-  //               <h3 className={css.author}>
-  //                 {review.author?.name || "Anonymous"}
-  //               </h3>
-  //             </div>
-  //             <p className={css.description}>{review.description}</p>
-  //           </div>
-  //         </SwiperSlide>
-  //       );
-  //     })}
-  //   </Swiper>
-  // );
+  useEffect(() => {
+    const fetchReviews = async () => {
+      setLoading(true);
+      try {
+        const { data } = await axios.get(
+          "https://jsonplaceholder.typicode.com/comments?_limit=6"
+        );
+        setReviews(
+          data.map((review, index) => ({
+            id: review.id,
+            name: review.name,
+            text: review.body,
+            rating: Math.floor(Math.random() * 2) + 4,
+            avatar: `https://i.pravatar.cc/100?img=${index + 1}`,
+          }))
+        );
+      } catch (error) {
+        console.error("Error fetching images:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchReviews();
+  }, []);
+
+  return (
+    <>
+      {loading && <Loader />}
+      <div className={css.reviewsContainer}>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          centeredSlides={true}
+          loop={true}
+          breakpoints={{
+            428: { slidesPerView: 1 },
+            1464: { slidesPerView: 3 },
+          }}
+          navigation={{
+            nextEl: ".swiperBtnNext",
+            prevEl: ".swiperBtnPrev",
+          }}
+          watchSlidesProgress={true}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          pagination={{ clickable: true }}
+          style={{
+            "--swiper-theme-color": "black",
+            height: "320px",
+            marginBottom: "20px",
+            maxWidth: "1258px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          {reviews.map(({ id, name, text, avatar }) => (
+            <SwiperSlide key={id}>
+              <div className={css.reviewCard}>
+                <div className={css.imgNameWrapper}>
+                  <img src={avatar} alt={name} className={css.reviewAvatar} />
+                  <div className={css.nameStarsWrapper}>
+                    <svg width={60} height={10}>
+                      <use href="/sprite.svg#icon-stars" />
+                    </svg>
+                    <h3 className={css.reviewName}>
+                      {name.length > 15
+                        ? name.slice(0, 15).trim() + "..."
+                        : name}
+                    </h3>
+                  </div>
+                </div>
+                <p className={css.reviewText}>{text}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <button
+          className={css.swiperBtnPrev}
+          onClick={() => swiperRef.current?.slidePrev()}
+        >
+          <svg className={css.swiperBtnIcon}>
+            <use href="/sprite.svg#icon-slider-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          className={css.swiperBtnNext}
+          onClick={() => swiperRef.current?.slideNext()}
+        >
+          <svg className={css.swiperBtnIcon}>
+            <use href="/sprite.svg#icon-slider-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </>
+  );
 }

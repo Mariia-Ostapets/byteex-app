@@ -1,39 +1,111 @@
 .reviewsContainer {
+  position: relative;
+  margin: 0 auto;
+}
+
+.reviewCard {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 35px 25px 39px;
+  text-align: center;
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.08);
+  width: 299px;
+  height: 261px;
+  border: 1px solid #eaeaea;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 12px;
-  padding: 24px 40px;
-  background: #fff;
-  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  border: 1px solid #eaeaea;
-  max-width: 338px;
-  height: 194px;
-  text-align: center;
+  gap: 8px;
 }
 
-.img {
-  border-radius: 50%;
-  width: 39px;
-  height: 39px;
-  object-fit: cover;
+@media screen and (min-width: 1464px) {
+  .reviewCard {
+    width: 338px;
+    max-height: 252px;
+  }
 }
 
-.reviewContent {
+.imgNameWrapper {
   display: flex;
-  gap: 14px;
-  justify-content: flex-start;
-  align-items: center;
+  gap: 12px;
 }
 
-.author {
-  font-size: 16px;
-  font-weight: bold;
+@media screen and (min-width: 1464px) {
+  .imgNameWrapper {
+    gap: 14px;
+  }
 }
 
-.description {
-  font-size: 14px;
-  color: #666;
+.reviewAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1464px) {
+  .reviewAvatar {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.nameStarsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviewName {
+  font-weight: 400;
   text-align: left;
+}
+
+.reviewText {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+@media screen and (min-width: 1464px) {
+  .reviewText {
+    line-height: 1.92;
+  }
+}
+
+.swiperBtnPrev,
+.swiperBtnNext {
+  position: absolute;
+  top: 120px;
+  z-index: 10;
+  background: none;
+  border: none;
+}
+
+.swiperBtnPrev {
+  left: 15px;
+}
+
+.swiperBtnNext {
+  right: 15px;
+}
+
+.swiperBtnIcon {
+  width: 10px;
+  height: 19px;
+}
+
+@media screen and (min-width: 1464px) {
+  .swiperBtnIcon {
+    width: 13px;
+    height: 24px;
+  }
+
+  .swiperBtnPrev {
+    left: 35px;
+  }
+
+  .swiperBtnNext {
+    right: 35px;
+  }
 }
