@@ -14,30 +14,6 @@ export default function Reviews() {
   const swiperRef = useRef(null);
 
   useEffect(() => {
-    const observer = new MutationObserver(() => {
-      const screenWidth = window.innerWidth;
-      document.querySelectorAll(".swiper-slide").forEach((slide) => {
-        if (
-          screenWidth >= 1464 &&
-          slide.classList.contains("swiper-slide-active")
-        ) {
-          slide.style.transform = "scale(1.2)";
-          slide.style.transition = "transform 0.4s ease-in-out";
-        } else {
-          slide.style.transform = "scale(1.2)";
-        }
-      });
-    });
-
-    const swiperContainer = swiperRef.current?.el;
-    if (swiperContainer) {
-      observer.observe(swiperContainer, { attributes: true, subtree: true });
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     const fetchReviews = async () => {
       setLoading(true);
       try {

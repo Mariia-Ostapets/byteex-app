@@ -1,0 +1,120 @@
+.faqSection {
+  padding-bottom: 43px;
+}
+
+@media screen and (min-width: 1464px) {
+  .faqSection {
+    background-image: url("../../../public/images/faq-desc.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+  }
+}
+
+.faqTitle {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: var(--primary-color-blue);
+  margin-bottom: 26px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1463px) {
+  .faqTitle {
+    width: 318px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1464px) {
+  .faqTitle {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+
+.accordionContainer {
+  border: none;
+}
+
+@media screen and (max-width: 1463px) {
+  .accordionContainer {
+    margin-bottom: 39px;
+  }
+}
+
+@media screen and (min-width: 1464px) {
+  .accordionContainer {
+    width: 630px;
+  }
+}
+
+.accordionItem {
+  border-bottom: 1px solid #ddd;
+  padding: 22px 0 29px 0;
+}
+
+.accordionItem:first-child {
+  border-top: 1px solid #eaeaea;
+}
+
+.accordionItemHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1464px) {
+  .accordionItemHeading {
+    padding-right: 15px;
+  }
+}
+
+.accordionItemBtn {
+  background: none;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--primary-color-blue);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.accordionItemBtn::after {
+  content: "+";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 0.55;
+  letter-spacing: 0.04em;
+  text-align: center;
+  transition: transform var(--primary-transition);
+}
+
+.accordionItemBtn[aria-expanded="true"]::after {
+  content: "−";
+}
+
+.accordionItemPannel {
+  padding-top: 10px;
+}
+
+.accordionItemText {
+  font-size: 14px;
+  line-height: 1.43;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 1464px) {
+  .accordionItemText {
+    font-size: 15px;
+    line-height: 1.47;
+    padding-right: 30px;
+  }
+}
