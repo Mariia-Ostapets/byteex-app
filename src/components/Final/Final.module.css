@@ -118,7 +118,7 @@
 .finalDescText::after {
   content: "";
   position: absolute;
-  right: -18px;
+  right: -9px;
   width: 2px;
   height: 17px;
   background-color: rgba(196, 196, 196, 0.25);
@@ -147,7 +147,7 @@
 .finalItem:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: -9px;
+  right: -18px;
   width: 1px;
   height: 51px;
   background-color: rgba(196, 196, 196, 0.4);
