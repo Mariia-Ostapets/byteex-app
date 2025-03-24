@@ -1,12 +1,40 @@
-# React + Vite
+# Byteex App 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Byteex App](./images/byteex.png)
 
-Currently, two official plugins are available:
+**Byteex App** is a company product page developed according to the design in [Figma](https://www.figma.com/design/S2YR3ijlPpGp9KWx4jl0qz/Byteex---Standard-Development-Test?node-id=0-1&p=f&t=BhH2Oak6P9KQES51-0).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Key Features
 
-## Expanding the ESLint configuration
+- Responsive design for mobile, tablet (up to 1463px), and desktop devices (from 1464px).
+- Dynamic content is fetched from:
+  - [Pixabay](https://pixabay.com) – images
+  - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) – test reviews
+- Built with **HTML, CSS, JavaScript**, and **React**.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Technologies & Libraries
+
+| Technology / Library                                                                   | Description                                        |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| [Axios](https://www.npmjs.com/package/axios)                                           | For asynchronous requests                          |
+| [modern-normalize](https://www.npmjs.com/package/modern-normalize)                     | Styles normalization & cross-browser compatibility |
+| [Swiper](https://swiperjs.com/)                                                        | Sliders on the page                                |
+| [react-accessible-accordion](https://www.npmjs.com/package/react-accessible-accordion) | Accordion for the FAQ section                      |
+| [react-spinners](https://www.npmjs.com/package/react-spinners)                         | Loaders for dynamic content                        |
+| [Vite](https://vitejs.dev/)                                                            | Project bundler                                    |
+| [Vercel](https://vercel.com/)                                                          | Deployment platform                                |
+
+## 📥 Running the Project Locally
+
+```sh
+git clone https://github.com/your-repo/byteex-app.git
+cd byteex-app
+npm install
+npm run dev
+```
+
+## Author 🖋️
+
+Mariia Ostapets, Fullstack developer
+[LinkedIn](https://www.linkedin.com/in/mariia-ostapets/) |
+[GitHub](https://github.com/Mariia-Ostapets)
