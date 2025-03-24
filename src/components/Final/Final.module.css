@@ -1,0 +1,154 @@
+.finalSection {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+@media screen and (max-width: 1463px) {
+  .finalSection {
+    background-image: url("../../../public/images/final-mob.png");
+    background-position: bottom -30px center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1464px) {
+  .finalSection {
+    padding-top: 83px;
+    padding-bottom: 84px;
+    background-image: url("../../../public/images/final-bg-desc.png");
+    background-position: bottom -30px center;
+    background-repeat: no-repeat;
+  }
+}
+
+.finalSectionTitleTextWrapper {
+  padding-bottom: 245px;
+}
+
+@media screen and (min-width: 1464px) {
+  .finalSectionTitleTextWrapper {
+    padding-bottom: 440px;
+    background-image: url("../../../public/images/final-desc.png");
+    background-position: bottom 30px center;
+    background-repeat: no-repeat;
+  }
+}
+
+.finalTitle {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.54;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--primary-color-blue);
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1464px) {
+  .finalTitle {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+
+.finalText {
+  line-height: 1.47;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1464px) {
+  .finalText {
+    max-width: 587px;
+  }
+}
+
+.finalBtn {
+  cursor: pointer;
+  background-color: var(--primary-color-blue);
+  border-radius: 5px;
+  width: 369px;
+  min-height: 56px;
+  border: none;
+  outline: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--primary-color-white);
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--primary-transition);
+  margin-bottom: 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.finalBtn:hover,
+.finalBtn:focus {
+  background-color: var(--secondary-color-blue);
+}
+
+.finalDescWrapper {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.finalClockWrapper {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalDescText {
+  font-size: 10px;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  color: #1fad40;
+  position: relative;
+}
+
+.finalDescText::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  width: 2px;
+  height: 17px;
+  background-color: rgba(196, 196, 196, 0.25);
+}
+
+.finalList {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalItem {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.finalItemText {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.finalItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -9px;
+  width: 1px;
+  height: 51px;
+  background-color: rgba(196, 196, 196, 0.4);
+}

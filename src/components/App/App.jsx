@@ -8,6 +8,7 @@ import HowOrder from "../HowOrder/HowOrder";
 import UserContent from "../UserContent/UserContent";
 import Faq from "../Faq/Faq";
 import Info from "../Info/Info";
+import Final from "../Final/Final";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <UserContent />
         <Faq />
         <Info />
+        <Final />
       </main>
     </Container>
   );
