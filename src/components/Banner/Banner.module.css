@@ -24,11 +24,6 @@
   animation: marquee 30s linear infinite;
 }
 
-/* .banner span {
-  display: inline-block;
-  padding-left: 200px;
-} */
-
 @keyframes marquee {
   from {
     transform: translateX(100%);

@@ -59,37 +59,6 @@ ul {
   padding: 0;
 }
 
-/* button {
+button {
   cursor: pointer;
-  background-color: var(--primary-color-blue);
-  border-radius: 5px;
-  width: 369px;
-  min-height: 56px;
-  border: none;
-  outline: transparent;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-  color: var(--primary-color-white);
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-  transition: background-color var(--primary-transition);
 }
-
-button:hover,
-button:focus {
-  background-color: var(--secondary-color-blue);
-} */
-
-/* .section-paddings {
-  padding-top: 52px;
-  padding-bottom: 52px;
-
-  @media screen and (min-width: 1464px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-} */

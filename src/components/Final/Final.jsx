@@ -62,7 +62,7 @@ export default function Final() {
             <ul className={css.finalList}>
               <li className={css.finalItem}>
                 <svg width={33} height={33}>
-                  <use href="/symbol-defs.svg#icon-final-car" />
+                  <use href="/sprite.svg#icon-final-car" />
                 </svg>
                 <p className={css.finalItemText}>
                   FREE Shipping on <br /> Orders over $200
@@ -70,7 +70,7 @@ export default function Final() {
               </li>
               <li className={css.finalItem}>
                 <svg width={33} height={33}>
-                  <use href="/symbol-defs.svg#icon-final-shield" />
+                  <use href="/sprite.svg#icon-final-shield" />
                 </svg>
                 <p className={css.finalItemText}>
                   Over 500+ 5 Star
@@ -79,7 +79,7 @@ export default function Final() {
               </li>
               <li className={css.finalItem}>
                 <svg width={33} height={33}>
-                  <use href="/symbol-defs.svg#icon-final-cart" />
+                  <use href="/sprite.svg#icon-final-cart" />
                 </svg>
                 <p className={css.finalItemText}>
                   Made ethically

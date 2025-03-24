@@ -23,7 +23,7 @@ export default function Info() {
           </li>
           <li className={css.infoItem}>
             <svg width={42} height={42}>
-              <use href="/sprite1.svg#icon-lightning" />
+              <use href="/sprite.svg#icon-lightning" />
             </svg>
             <h3 className={css.infoSubTitle}>7,321 kWh</h3>
             <p className={css.infoText}>of energy saved</p>

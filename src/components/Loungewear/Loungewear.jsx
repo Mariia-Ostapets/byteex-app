@@ -90,21 +90,6 @@ export default function Loungewear() {
           <use href="/sprite.svg#icon-slider-arrow-right"></use>
         </svg>
       </button>
-
-      {/* <Swiper
-          onSwiper={(swiper) => (thumbsSwiperRef.current = swiper)}
-          slidesPerView={5}
-          spaceBetween={10}
-          watchSlidesProgress
-          watchSlidesVisibility={true}
-          className="thumbs-swiper"
-        >
-          {images.map((image) => (
-            <SwiperSlide key={image.id}>
-              <img src={image.desc} alt="Thumbnail" />
-            </SwiperSlide>
-          ))}
-        </Swiper> */}
     </div>
   );
 }
