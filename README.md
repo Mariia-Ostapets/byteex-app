@@ -1,8 +1,12 @@
-# Byteex App 🚀
-
-![Byteex App](./images/byteex.png)
+# 🚀 Byteex App
 
 **Byteex App** is a company product page developed according to the design in [Figma](https://www.figma.com/design/S2YR3ijlPpGp9KWx4jl0qz/Byteex---Standard-Development-Test?node-id=0-1&p=f&t=BhH2Oak6P9KQES51-0).
+
+[**Live page**](https://byteex-app-pi.vercel.app/)
+
+## 🖼️ Preview
+
+![Byteex App](./public/images/byteex.png)
 
 ## 📌 Key Features
 
@@ -33,7 +37,7 @@ npm install
 npm run dev
 ```
 
-## Author 🖋️
+## 🖋️ Author
 
 Mariia Ostapets, Fullstack developer
 [LinkedIn](https://www.linkedin.com/in/mariia-ostapets/) |
