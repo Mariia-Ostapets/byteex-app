@@ -7,6 +7,7 @@ import About from "../About/About";
 import HowOrder from "../HowOrder/HowOrder";
 import UserContent from "../UserContent/UserContent";
 import Faq from "../Faq/Faq";
+import Info from "../Info/Info";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <HowOrder />
         <UserContent />
         <Faq />
+        <Info />
       </main>
     </Container>
   );

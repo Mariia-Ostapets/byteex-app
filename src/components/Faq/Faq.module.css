@@ -7,7 +7,7 @@
     background-image: url("../../../public/images/faq-desc.png");
     background-position: right top;
     background-repeat: no-repeat;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
   }
 }
 
@@ -49,6 +49,7 @@
 @media screen and (min-width: 1464px) {
   .accordionContainer {
     width: 630px;
+    padding-bottom: 120px;
   }
 }
 
